@@ -1,0 +1,12 @@
+---
+# make sure memcached is started
+- name: start memcached
+  service: name=memcached enabled=yes state=started
+
+# make sure memcached is started
+- name: stop memcached
+  service: name=memcached enabled=yes state=stopped
+
+# restart memcached
+- name: restart memcached
+  service: name=memcached enabled=yes state=restarted
